@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TomatoWeb" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="djV-ox-Keg" customClass="StatusMenuController" customModule="TomatoWeb" customModuleProvider="target">
+            <connections>
+                <outlet property="connectionStatus" destination="JK9-vS-eaf" id="hg6-0M-rfI"/>
+                <outlet property="statusMenu" destination="dKA-AY-x4k" id="1k3-Vq-DQI"/>
+                <outlet property="switch" destination="6GE-8P-fS9" id="Kj9-HM-Alx"/>
+            </connections>
+        </customObject>
+        <menu id="dKA-AY-x4k">
+            <items>
+                <menuItem title="Tomato Web: On" id="JK9-vS-eaf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Turn On" id="6GE-8P-fS9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="handleTurnOnOff:" target="djV-ox-Keg" id="3XW-ai-pLy"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Network Health" id="L4R-RN-O0j">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Network Health" id="c6L-9n-bqc">
+                        <items>
+                            <menuItem title="Item" id="HyZ-VG-iHs">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="rrv-yb-Xvj"/>
+                <menuItem title="Quit" id="nJs-ox-Hha">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="handleQuit:" target="djV-ox-Keg" id="V5j-1u-G3Y"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="81" y="-241"/>
+        </menu>
+    </objects>
+</document>
