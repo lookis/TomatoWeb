@@ -11,6 +11,12 @@
 		53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2731E88E24000ACAFD8 /* Assets.xcassets */; };
 		53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2751E88E24100ACAFD8 /* MainMenu.xib */; };
 		53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */; };
+		53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */; };
+		53E63C1D1E8D46A3000C36D3 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 53E63C1C1E8D46A3000C36D3 /* Services */; };
+		53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */; };
+		53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C201E8D6083000C36D3 /* PrivoxyService.swift */; };
+		53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C221E8D6175000C36D3 /* KcpTunService.swift */; };
+		53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C241E8DFFAC000C36D3 /* ServiceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		53E2D2761E88E24100ACAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53E2D2781E88E24100ACAFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		53E63C1C1E8D46A3000C36D3 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
+		53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLocalService.swift; sourceTree = "<group>"; };
+		53E63C201E8D6083000C36D3 /* PrivoxyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivoxyService.swift; sourceTree = "<group>"; };
+		53E63C221E8D6175000C36D3 /* KcpTunService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcpTunService.swift; sourceTree = "<group>"; };
+		53E63C241E8DFFAC000C36D3 /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 		53E2D2651E88E24000ACAFD8 = {
 			isa = PBXGroup;
 			children = (
+				53E63C161E8D4413000C36D3 /* Resources */,
 				53E2D2701E88E24000ACAFD8 /* TomatoWeb */,
 				53E2D26F1E88E24000ACAFD8 /* Products */,
 			);
@@ -52,13 +65,26 @@
 		53E2D2701E88E24000ACAFD8 /* TomatoWeb */ = {
 			isa = PBXGroup;
 			children = (
+				53E63C201E8D6083000C36D3 /* PrivoxyService.swift */,
+				53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */,
+				53E63C221E8D6175000C36D3 /* KcpTunService.swift */,
 				53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */,
 				53E2D2731E88E24000ACAFD8 /* Assets.xcassets */,
 				53E2D2751E88E24100ACAFD8 /* MainMenu.xib */,
 				53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */,
 				53E2D2781E88E24100ACAFD8 /* Info.plist */,
+				53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */,
+				53E63C241E8DFFAC000C36D3 /* ServiceController.swift */,
 			);
 			path = TomatoWeb;
+			sourceTree = "<group>";
+		};
+		53E63C161E8D4413000C36D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53E63C1C1E8D46A3000C36D3 /* Services */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +113,9 @@
 		53E2D2661E88E24000ACAFD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Services,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Lookis;
@@ -121,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E63C1D1E8D46A3000C36D3 /* Services in Resources */,
 				53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */,
 				53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */,
 			);
@@ -133,7 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */,
+				53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */,
+				53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */,
+				53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */,
 				53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */,
+				53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */,
 				53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +285,11 @@
 				DEVELOPMENT_TEAM = TV7X9S92KX;
 				INFOPLIST_FILE = TomatoWeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.TomatoWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -264,6 +304,11 @@
 				DEVELOPMENT_TEAM = TV7X9S92KX;
 				INFOPLIST_FILE = TomatoWeb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.TomatoWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -289,6 +334,7 @@
 				53E2D27D1E88E24100ACAFD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

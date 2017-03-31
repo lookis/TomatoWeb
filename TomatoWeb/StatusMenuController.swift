@@ -20,6 +20,8 @@ class StatusMenuController: NSObject {
         icon?.isTemplate = true
         statusItem.image = icon
         statusItem.menu = statusMenu
+//        let script = NSAppleScript(source: "")
+//        script?.executeAndReturnError(<#T##errorInfo: AutoreleasingUnsafeMutablePointer<NSDictionary?>?##AutoreleasingUnsafeMutablePointer<NSDictionary?>?#>)
     }
     
     @IBAction func handleQuit(_ sender: NSMenuItem) {
