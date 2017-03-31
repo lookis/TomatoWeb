@@ -26,23 +26,23 @@ class ServiceController {
     let LAUNCH_AGENT_PLIST = "\(NSHomeDirectory())/Library/LaunchAgents"
     
     public func installService() {
-        
         services.forEach({(key:String, value:Dictionary<String, Any>) -> Void in
             NSLog("initialize \(key)")
             let serviceType:ServiceProtocol.Type = (value["service"] as! ServiceProtocol.Type)
             let service:ServiceProtocol = serviceType.init()
             service.setupService()
-            service.generateLaunchdPlist().write(toFile: "\(LAUNCH_AGENT_PLIST)/\(value["plist"] as! String)", atomically: true)
-            
+            let plist:String = "\(LAUNCH_AGENT_PLIST)/\(value["plist"] as! String)"
+            service.generateLaunchdPlist().write(toFile: plist, atomically: true)
+            let task = Process.launchedProcess(launchPath: "/bin/launchctl", arguments: ["load", plist])
+            task.waitUntilExit()
         })
-        let ss:ServiceProtocol! = SSLocalService()
-        ss.setupService()
-        ss.generateLaunchdPlist().write(toFile: "\(LAUNCH_AGENT_PLIST)/me.lookis.ss-local.plist", atomically: true)
-        let privoxy:ServiceProtocol! = PrivoxyService()
-        privoxy.setupService()
-        privoxy.generateLaunchdPlist().write(toFile: "\(LAUNCH_AGENT_PLIST)/me.lookis.privoxy.plist", atomically: true)
-        let kcptun:ServiceProtocol! = KcpTunService()
-        kcptun.setupService()
-        kcptun.generateLaunchdPlist().write(toFile: "\(LAUNCH_AGENT_PLIST)/me.lookis.kcptun.plist", atomically: true)
+    }
+    
+    public func uninstallService() {
+        services.forEach({(key:String, value:Dictionary<String, Any>) -> Void in
+            let plist:String = "\(LAUNCH_AGENT_PLIST)/\(value["plist"] as! String)"
+            let task = Process.launchedProcess(launchPath: "/bin/launchctl", arguments: ["unload", plist])
+            task.waitUntilExit()
+        })
     }
 }
