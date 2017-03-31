@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -17,8 +17,9 @@
         <customObject id="djV-ox-Keg" customClass="StatusMenuController" customModule="TomatoWeb" customModuleProvider="target">
             <connections>
                 <outlet property="connectionStatus" destination="JK9-vS-eaf" id="hg6-0M-rfI"/>
+                <outlet property="connectionSwitch" destination="6GE-8P-fS9" id="RRm-Bw-78Z"/>
+                <outlet property="launchAtLogin" destination="KVN-DI-klt" id="Htg-sK-Zne"/>
                 <outlet property="statusMenu" destination="dKA-AY-x4k" id="1k3-Vq-DQI"/>
-                <outlet property="switch" destination="6GE-8P-fS9" id="Kj9-HM-Alx"/>
             </connections>
         </customObject>
         <menu id="dKA-AY-x4k">
@@ -32,15 +33,11 @@
                         <action selector="handleTurnOnOff:" target="djV-ox-Keg" id="3XW-ai-pLy"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Network Health" id="L4R-RN-O0j">
+                <menuItem title="Launch on startup" id="KVN-DI-klt">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Network Health" id="c6L-9n-bqc">
-                        <items>
-                            <menuItem title="Item" id="HyZ-VG-iHs">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                            </menuItem>
-                        </items>
-                    </menu>
+                    <connections>
+                        <action selector="handleLaunchAtLogin:" target="djV-ox-Keg" id="MA4-Om-Tzi"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="rrv-yb-Xvj"/>
                 <menuItem title="Quit" id="nJs-ox-Hha">

@@ -11,7 +11,9 @@ import Cocoa
 class StatusMenuController: NSObject {
     
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var connectionSwitch: NSMenuItem!
     @IBOutlet weak var connectionStatus: NSMenuItem!
+    @IBOutlet weak var launchAtLogin: NSMenuItem!
     
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
@@ -20,10 +22,10 @@ class StatusMenuController: NSObject {
         icon?.isTemplate = true
         statusItem.image = icon
         statusItem.menu = statusMenu
-//        let script = NSAppleScript(source: "")
-//        script?.executeAndReturnError(<#T##errorInfo: AutoreleasingUnsafeMutablePointer<NSDictionary?>?##AutoreleasingUnsafeMutablePointer<NSDictionary?>?#>)
     }
     
+    @IBAction func handleLaunchAtLogin(_ sender: Any) {
+    }
     @IBAction func handleQuit(_ sender: NSMenuItem) {
     }
     @IBAction func handleTurnOnOff(_ sender: NSMenuItem) {
