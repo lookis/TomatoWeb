@@ -42,9 +42,7 @@ public class NetworkController {
             let networkHelper = helperToolConnection?.remoteObjectProxyWithErrorHandler({(error:Error) -> Void in
                 print(error);
             }) as! NetworkHelperProtocol
-            networkHelper.clearNetworkSetting(callback: {(any:Any?) -> Void in
-                print(any)
-            })
+            networkHelper.clearNetworkSetting()
         }
     }
     

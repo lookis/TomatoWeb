@@ -10,10 +10,10 @@ import Foundation
 
 @objc protocol NetworkHelperProtocol {
     
-    func clearNetworkSetting(callback: (Any?) -> Void)
+    func clearNetworkSetting()
     
     func setAutomaticProxyConfig(address:String!)
     
-    func setSocksProxy(address:String!)
+    func setSocksProxy(host:String!, port:NSNumber!)
     
 }

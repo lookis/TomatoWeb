@@ -34,21 +34,34 @@ public class NetworkHelper: NSObject, NSXPCListenerDelegate, NetworkHelperProtoc
         return true
     }
     
-    public func clearNetworkSetting(callback: (Any?) -> Void) {
+    public func clearNetworkSetting() {
         let proxies:Dictionary = [kCFNetworkProxiesHTTPEnable as NSString: 0,
                                   kCFNetworkProxiesHTTPSEnable as NSString: 0,
                                   kCFNetworkProxiesProxyAutoConfigEnable as NSString: 0,
                                   kCFNetworkProxiesSOCKSEnable as NSString: 0,
-                                  kCFNetworkProxiesExceptionsList as NSString: []] as [NSString : Any]
+                                  kCFNetworkProxiesExceptionsList as NSString: ["127.0.0.1", "localhost"]] as [NSString : Any]
         makeChange(proxy: proxies)
     }
     
     public func setAutomaticProxyConfig(address: String!) {
-        
+        let proxies:Dictionary = [kCFNetworkProxiesHTTPEnable as NSString: 0,
+                                  kCFNetworkProxiesHTTPSEnable as NSString: 0,
+                                  kCFNetworkProxiesProxyAutoConfigEnable as NSString: 1,
+                                  kCFNetworkProxiesProxyAutoConfigURLString as NSString: address,
+                                  kCFNetworkProxiesSOCKSEnable as NSString: 0,
+                                  kCFNetworkProxiesExceptionsList as NSString: ["127.0.0.1", "localhost"]] as [NSString : Any]
+        makeChange(proxy: proxies)
     }
     
-    public func setSocksProxy(address: String!) {
-        
+    public func setSocksProxy(host: String!, port:NSNumber!) {
+        let proxies:Dictionary = [kCFNetworkProxiesHTTPEnable as NSString: 0,
+                                  kCFNetworkProxiesHTTPSEnable as NSString: 0,
+                                  kCFNetworkProxiesProxyAutoConfigEnable as NSString: 0,
+                                  kCFNetworkProxiesSOCKSEnable as NSString: 1,
+                                  kCFNetworkProxiesSOCKSProxy as NSString: host,
+                                  kCFNetworkProxiesSOCKSPort as NSString: port,
+                                  kCFNetworkProxiesExceptionsList as NSString: ["127.0.0.1", "localhost"]] as [NSString : Any]
+        makeChange(proxy: proxies)
     }
     
     func makeChange(proxy: Dictionary<NSString, Any>){
