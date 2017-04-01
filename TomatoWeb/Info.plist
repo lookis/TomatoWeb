@@ -22,13 +22,18 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Lookis. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<true/>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>me.lookis.tomato.NetworkHelper</key>
+		<string>identifier "me.lookis.tomato.NetworkHelper" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: lookis@me.com (85S465XJ7D)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
 </dict>
 </plist>

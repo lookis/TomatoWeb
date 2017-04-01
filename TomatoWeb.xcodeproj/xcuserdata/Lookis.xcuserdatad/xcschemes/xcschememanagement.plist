@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>NetworkHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TomatoWeb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>532B53461E8F20AC007836D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53E2D26D1E88E24000ACAFD8</key>
 		<dict>
 			<key>primary</key>

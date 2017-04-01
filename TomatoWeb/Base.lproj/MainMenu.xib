@@ -22,6 +22,7 @@
                 <outlet property="statusMenu" destination="dKA-AY-x4k" id="1k3-Vq-DQI"/>
             </connections>
         </customObject>
+        <customObject id="U7w-tz-zzg" customClass="SUUpdater"/>
         <menu id="dKA-AY-x4k">
             <items>
                 <menuItem title="Tomato Web: On" id="JK9-vS-eaf">
