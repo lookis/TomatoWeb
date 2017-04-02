@@ -1,2 +1,4 @@
 use_frameworks!
-pod 'Swifter', '~> 1.3.3'
+target "TomatoWeb" do
+    pod 'Swifter', '~> 1.3.3'
+end

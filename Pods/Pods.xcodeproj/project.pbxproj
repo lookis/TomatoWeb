@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B26DDF20F5157E592BE09EF1E8AA4D1 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7B33365FCEEFBA48111EBDB758951 /* WebSockets.swift */; };
+		11B8C45972088D50C8E8E351EBB14935 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018E2553AB29E397F56CC79AE7AF5E5 /* HttpParser.swift */; };
+		1CE3F96BDFF197B37E85EA36875169C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		27EC9C394F1A81B732F79099FB3AB218 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4038776CCF5C791FEDE4A0D2A044D14 /* String+BASE64.swift */; };
+		2E35837FF1CF24DA29169C7185C45357 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0DE180BD46D7A44E7256D868C724E /* HttpServerIO.swift */; };
+		41CD6A703DC54171BA38726C92E9505B /* Swifter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFB45BD9FED6E5F2AF1D394CBE71B73 /* Swifter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556ECE95347F2FA520373C7970EEEFAB /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A015711BD0B80DF734FD2E3395C4D /* Socket.swift */; };
+		66AC4A7A2E9C9FBCC38C7006B60CD6C2 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32BEF82A32DA8051C83140668A15C0 /* HttpResponse.swift */; };
+		7057BB1086ECC1EDE587733BDD3CF612 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F170F9CB467BC18410909EBFDDC7B /* Files.swift */; };
+		7FE8118E702CEB0E849F06D8F362D53A /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3E2964B137572305CD053FAE22F52 /* HttpRequest.swift */; };
+		833D4E2FB0E2C66BCA957B566A1EF4C4 /* Pods-TomatoWeb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCACA701BF7A773DACAD3CABD9E0616 /* Pods-TomatoWeb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938E9CE7B3F21DCAFA8A6CB916D4B5B2 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C04FB8CE574AE23BB9197B8F05017D /* DemoServer.swift */; };
+		98F3F3C2BED96EDD5EB72931D8353AA3 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B4969B9281E6B53615AC9CBD2693D5 /* Scopes.swift */; };
+		AA660C5ECABA6671A0CFEB05ED9829D1 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCC662A4D7162E21F0C63275856E00D /* Process.swift */; };
+		AA76674AB856C893F8AEC6796DEC3759 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D240E4350B964FCE575C283D30AD4F8 /* HttpRouter.swift */; };
+		AE5D3C41CEA3015EF5BD2F850F593F02 /* Pods-TomatoWeb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C3F43190DA7FD81158A2027443CF4 /* Pods-TomatoWeb-dummy.m */; };
+		BB3FCCA87F1F7A7CD9139685655448EE /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676B34B3B0C536D44D20DB9EBF2D8C5 /* Socket+File.swift */; };
+		BD4589ACDD271CC7B12CAFDA6EB4EB52 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEBC81D06F241E555C6E16876585F9 /* String+File.swift */; };
+		CDBCA6B2442AC77C61B8454E8BB7E72F /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A70BBADC8AE78BFA925BC3D6A06EAF /* Socket+Server.swift */; };
+		DA10244DEF32295F221726A2BAD82D75 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA82E21B7A7FAC12248F26F977E0A36E /* String+SHA1.swift */; };
+		DDC70BD4F2DD60C1012430411FEDF3BF /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CA29A0ACF4D17FF93C8183CF2E6068 /* String+Misc.swift */; };
+		E05BC7E3B7D795D598C87652A2E6B428 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		E6273B80183047B6AC6A32BE27833084 /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A22FE77D157C1B627774F03B067302F /* Errno.swift */; };
+		E741D38FC3E1997F50EE1F52442CC892 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B9A4FEF954455A863A7A380D698D3 /* HttpServer.swift */; };
+		F7778CE3509C8DB592B9A05CDD9F9953 /* Swifter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEF6F7F606D39D2316E3F8B79D257DB /* Swifter-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D23C4B2BDEECB9270A8A2CCB64C61C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EC52C821B9B1D8541026F72422D237;
+			remoteInfo = Swifter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038F170F9CB467BC18410909EBFDDC7B /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = Sources/Files.swift; sourceTree = "<group>"; };
+		07B1F84F15AE2A11A4D9DD00163D3B9D /* Pods_TomatoWeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TomatoWeb.framework; path = "Pods-TomatoWeb.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D32BEF82A32DA8051C83140668A15C0 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/HttpResponse.swift; sourceTree = "<group>"; };
+		1A22FE77D157C1B627774F03B067302F /* Errno.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errno.swift; path = Sources/Errno.swift; sourceTree = "<group>"; };
+		1D0A015711BD0B80DF734FD2E3395C4D /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		1D240E4350B964FCE575C283D30AD4F8 /* HttpRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRouter.swift; path = Sources/HttpRouter.swift; sourceTree = "<group>"; };
+		2018E2553AB29E397F56CC79AE7AF5E5 /* HttpParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = Sources/HttpParser.swift; sourceTree = "<group>"; };
+		228C3F43190DA7FD81158A2027443CF4 /* Pods-TomatoWeb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TomatoWeb-dummy.m"; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		305A2C645EF49F2AAE2A30F664005F44 /* Swifter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-prefix.pch"; sourceTree = "<group>"; };
+		41F7B33365FCEEFBA48111EBDB758951 /* WebSockets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSockets.swift; path = Sources/WebSockets.swift; sourceTree = "<group>"; };
+		4676B34B3B0C536D44D20DB9EBF2D8C5 /* Socket+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+File.swift"; path = "Sources/Socket+File.swift"; sourceTree = "<group>"; };
+		4AEEBC81D06F241E555C6E16876585F9 /* String+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+File.swift"; path = "Sources/String+File.swift"; sourceTree = "<group>"; };
+		4EF3E44123EB721A4E5535F13072089E /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swifter.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8B9A4FEF954455A863A7A380D698D3 /* HttpServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = Sources/HttpServer.swift; sourceTree = "<group>"; };
+		54C04FB8CE574AE23BB9197B8F05017D /* DemoServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DemoServer.swift; path = Sources/DemoServer.swift; sourceTree = "<group>"; };
+		69AC57842E7B14E7A68A2105F85AD6CB /* Swifter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Swifter.modulemap; sourceTree = "<group>"; };
+		74E3E2964B137572305CD053FAE22F52 /* HttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = Sources/HttpRequest.swift; sourceTree = "<group>"; };
+		7B304C4D25BADEEAA3F017B55CA303B8 /* Pods-TomatoWeb-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TomatoWeb-frameworks.sh"; sourceTree = "<group>"; };
+		82CA29A0ACF4D17FF93C8183CF2E6068 /* String+Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Misc.swift"; path = "Sources/String+Misc.swift"; sourceTree = "<group>"; };
+		8DB0DE180BD46D7A44E7256D868C724E /* HttpServerIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServerIO.swift; path = Sources/HttpServerIO.swift; sourceTree = "<group>"; };
+		92A70BBADC8AE78BFA925BC3D6A06EAF /* Socket+Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+Server.swift"; path = "Sources/Socket+Server.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3910C3901482F2E20320BE51A61E91E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC60ABE5838778DD4EDBC709B2F545AF /* Pods-TomatoWeb-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TomatoWeb-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ADEF6F7F606D39D2316E3F8B79D257DB /* Swifter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swifter-dummy.m"; sourceTree = "<group>"; };
+		B4038776CCF5C791FEDE4A0D2A044D14 /* String+BASE64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+BASE64.swift"; path = "Sources/String+BASE64.swift"; sourceTree = "<group>"; };
+		C99AE4773991ED68557CE021BBF27B51 /* Swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swifter.xcconfig; sourceTree = "<group>"; };
+		CFCC662A4D7162E21F0C63275856E00D /* Process.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Process.swift; path = Sources/Process.swift; sourceTree = "<group>"; };
+		D2119EF879E21F731095409A24CFCA6D /* Pods-TomatoWeb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TomatoWeb.release.xcconfig"; sourceTree = "<group>"; };
+		D8B4969B9281E6B53615AC9CBD2693D5 /* Scopes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scopes.swift; path = Sources/Scopes.swift; sourceTree = "<group>"; };
+		DA82E21B7A7FAC12248F26F977E0A36E /* String+SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SHA1.swift"; path = "Sources/String+SHA1.swift"; sourceTree = "<group>"; };
+		DBFB45BD9FED6E5F2AF1D394CBE71B73 /* Swifter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-umbrella.h"; sourceTree = "<group>"; };
+		DE0E7321B282137172770B8BE4F83356 /* Pods-TomatoWeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TomatoWeb.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BA8DDED566375825836EDF5AD8BEEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCACA701BF7A773DACAD3CABD9E0616 /* Pods-TomatoWeb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TomatoWeb-umbrella.h"; sourceTree = "<group>"; };
+		F1A78622B81653C750A38B48D124B023 /* Pods-TomatoWeb-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TomatoWeb-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4B012670A1AD6618F5232E3FCA8B80B /* Pods-TomatoWeb-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TomatoWeb-resources.sh"; sourceTree = "<group>"; };
+		F5EF13F94B2C0B1C61B26C1684EFDC93 /* Pods-TomatoWeb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TomatoWeb.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF96BF14FB0F9485367E0A3E6DFDF06A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05BC7E3B7D795D598C87652A2E6B428 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA596F67A9D13DF80B25DC276FCA3A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE3F96BDFF197B37E85EA36875169C6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		0DAD8843856F9E836248AC0616A2055B /* Pods-TomatoWeb */ = {
+			isa = PBXGroup;
+			children = (
+				E8BA8DDED566375825836EDF5AD8BEEC /* Info.plist */,
+				F5EF13F94B2C0B1C61B26C1684EFDC93 /* Pods-TomatoWeb.modulemap */,
+				AC60ABE5838778DD4EDBC709B2F545AF /* Pods-TomatoWeb-acknowledgements.markdown */,
+				F1A78622B81653C750A38B48D124B023 /* Pods-TomatoWeb-acknowledgements.plist */,
+				228C3F43190DA7FD81158A2027443CF4 /* Pods-TomatoWeb-dummy.m */,
+				7B304C4D25BADEEAA3F017B55CA303B8 /* Pods-TomatoWeb-frameworks.sh */,
+				F4B012670A1AD6618F5232E3FCA8B80B /* Pods-TomatoWeb-resources.sh */,
+				EFCACA701BF7A773DACAD3CABD9E0616 /* Pods-TomatoWeb-umbrella.h */,
+				DE0E7321B282137172770B8BE4F83356 /* Pods-TomatoWeb.debug.xcconfig */,
+				D2119EF879E21F731095409A24CFCA6D /* Pods-TomatoWeb.release.xcconfig */,
+			);
+			name = "Pods-TomatoWeb";
+			path = "Target Support Files/Pods-TomatoWeb";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5496569EFDB2F646E9958296B794B87C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E317567DD6CFBCC6BD8E2CCC3334E736 /* Swifter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5783016B0B3CA5932571E865C1A484C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3910C3901482F2E20320BE51A61E91E /* Info.plist */,
+				69AC57842E7B14E7A68A2105F85AD6CB /* Swifter.modulemap */,
+				C99AE4773991ED68557CE021BBF27B51 /* Swifter.xcconfig */,
+				ADEF6F7F606D39D2316E3F8B79D257DB /* Swifter-dummy.m */,
+				305A2C645EF49F2AAE2A30F664005F44 /* Swifter-prefix.pch */,
+				DBFB45BD9FED6E5F2AF1D394CBE71B73 /* Swifter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swifter";
+			sourceTree = "<group>";
+		};
+		5D026DCA4E53E9F69ACE3472B90CD3DD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DAD8843856F9E836248AC0616A2055B /* Pods-TomatoWeb */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7C5F315811FF4C7C7BF0AD01B14314D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B1F84F15AE2A11A4D9DD00163D3B9D /* Pods_TomatoWeb.framework */,
+				4EF3E44123EB721A4E5535F13072089E /* Swifter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				5496569EFDB2F646E9958296B794B87C /* Pods */,
+				7C5F315811FF4C7C7BF0AD01B14314D9 /* Products */,
+				5D026DCA4E53E9F69ACE3472B90CD3DD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E317567DD6CFBCC6BD8E2CCC3334E736 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				54C04FB8CE574AE23BB9197B8F05017D /* DemoServer.swift */,
+				1A22FE77D157C1B627774F03B067302F /* Errno.swift */,
+				038F170F9CB467BC18410909EBFDDC7B /* Files.swift */,
+				2018E2553AB29E397F56CC79AE7AF5E5 /* HttpParser.swift */,
+				74E3E2964B137572305CD053FAE22F52 /* HttpRequest.swift */,
+				0D32BEF82A32DA8051C83140668A15C0 /* HttpResponse.swift */,
+				1D240E4350B964FCE575C283D30AD4F8 /* HttpRouter.swift */,
+				4F8B9A4FEF954455A863A7A380D698D3 /* HttpServer.swift */,
+				8DB0DE180BD46D7A44E7256D868C724E /* HttpServerIO.swift */,
+				CFCC662A4D7162E21F0C63275856E00D /* Process.swift */,
+				D8B4969B9281E6B53615AC9CBD2693D5 /* Scopes.swift */,
+				1D0A015711BD0B80DF734FD2E3395C4D /* Socket.swift */,
+				4676B34B3B0C536D44D20DB9EBF2D8C5 /* Socket+File.swift */,
+				92A70BBADC8AE78BFA925BC3D6A06EAF /* Socket+Server.swift */,
+				B4038776CCF5C791FEDE4A0D2A044D14 /* String+BASE64.swift */,
+				4AEEBC81D06F241E555C6E16876585F9 /* String+File.swift */,
+				82CA29A0ACF4D17FF93C8183CF2E6068 /* String+Misc.swift */,
+				DA82E21B7A7FAC12248F26F977E0A36E /* String+SHA1.swift */,
+				41F7B33365FCEEFBA48111EBDB758951 /* WebSockets.swift */,
+				5783016B0B3CA5932571E865C1A484C6 /* Support Files */,
+			);
+			name = Swifter;
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A2E56A0A3F27B0DEEF13234564F727EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CD6A703DC54171BA38726C92E9505B /* Swifter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F6A56C8680B2E69E90C798F983A4FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833D4E2FB0E2C66BCA957B566A1EF4C4 /* Pods-TomatoWeb-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26EC52C821B9B1D8541026F72422D237 /* Swifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C040564D749F8D5CD7122B9FA2146A2 /* Build configuration list for PBXNativeTarget "Swifter" */;
+			buildPhases = (
+				BE139D36BC9217A7150F1AE6A19F844A /* Sources */,
+				DF96BF14FB0F9485367E0A3E6DFDF06A /* Frameworks */,
+				A2E56A0A3F27B0DEEF13234564F727EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			productName = Swifter;
+			productReference = 4EF3E44123EB721A4E5535F13072089E /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96EC88ED864CA9CFB969FF946B672546 /* Pods-TomatoWeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004915B70BFA0B662B52999EB4F797A2 /* Build configuration list for PBXNativeTarget "Pods-TomatoWeb" */;
+			buildPhases = (
+				3CC6C4BD4811A320D2C330D3C8895917 /* Sources */,
+				FA596F67A9D13DF80B25DC276FCA3A91 /* Frameworks */,
+				B1F6A56C8680B2E69E90C798F983A4FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC5910E789A79DEA141F7482A93F9581 /* PBXTargetDependency */,
+			);
+			name = "Pods-TomatoWeb";
+			productName = "Pods-TomatoWeb";
+			productReference = 07B1F84F15AE2A11A4D9DD00163D3B9D /* Pods_TomatoWeb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7C5F315811FF4C7C7BF0AD01B14314D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96EC88ED864CA9CFB969FF946B672546 /* Pods-TomatoWeb */,
+				26EC52C821B9B1D8541026F72422D237 /* Swifter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CC6C4BD4811A320D2C330D3C8895917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5D3C41CEA3015EF5BD2F850F593F02 /* Pods-TomatoWeb-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE139D36BC9217A7150F1AE6A19F844A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938E9CE7B3F21DCAFA8A6CB916D4B5B2 /* DemoServer.swift in Sources */,
+				E6273B80183047B6AC6A32BE27833084 /* Errno.swift in Sources */,
+				7057BB1086ECC1EDE587733BDD3CF612 /* Files.swift in Sources */,
+				11B8C45972088D50C8E8E351EBB14935 /* HttpParser.swift in Sources */,
+				7FE8118E702CEB0E849F06D8F362D53A /* HttpRequest.swift in Sources */,
+				66AC4A7A2E9C9FBCC38C7006B60CD6C2 /* HttpResponse.swift in Sources */,
+				AA76674AB856C893F8AEC6796DEC3759 /* HttpRouter.swift in Sources */,
+				E741D38FC3E1997F50EE1F52442CC892 /* HttpServer.swift in Sources */,
+				2E35837FF1CF24DA29169C7185C45357 /* HttpServerIO.swift in Sources */,
+				AA660C5ECABA6671A0CFEB05ED9829D1 /* Process.swift in Sources */,
+				98F3F3C2BED96EDD5EB72931D8353AA3 /* Scopes.swift in Sources */,
+				BB3FCCA87F1F7A7CD9139685655448EE /* Socket+File.swift in Sources */,
+				CDBCA6B2442AC77C61B8454E8BB7E72F /* Socket+Server.swift in Sources */,
+				556ECE95347F2FA520373C7970EEEFAB /* Socket.swift in Sources */,
+				27EC9C394F1A81B732F79099FB3AB218 /* String+BASE64.swift in Sources */,
+				BD4589ACDD271CC7B12CAFDA6EB4EB52 /* String+File.swift in Sources */,
+				DDC70BD4F2DD60C1012430411FEDF3BF /* String+Misc.swift in Sources */,
+				DA10244DEF32295F221726A2BAD82D75 /* String+SHA1.swift in Sources */,
+				F7778CE3509C8DB592B9A05CDD9F9953 /* Swifter-dummy.m in Sources */,
+				0B26DDF20F5157E592BE09EF1E8AA4D1 /* WebSockets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC5910E789A79DEA141F7482A93F9581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swifter;
+			target = 26EC52C821B9B1D8541026F72422D237 /* Swifter */;
+			targetProxy = D23C4B2BDEECB9270A8A2CCB64C61C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35FF3970D39D92917224EADF62D389A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2119EF879E21F731095409A24CFCA6D /* Pods-TomatoWeb.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TomatoWeb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TomatoWeb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		606DB5D7EB3BB681582EED8ED1CA9D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99AE4773991ED68557CE021BBF27B51 /* Swifter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		896719AE49C47BEFF795B30F6F3C5B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99AE4773991ED68557CE021BBF27B51 /* Swifter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9420A7205B8F85520AF134F4EE25F7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F0EEC798103802E82E2E386724B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0E7321B282137172770B8BE4F83356 /* Pods-TomatoWeb.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TomatoWeb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TomatoWeb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F653E316AB5F825D3AD0CAE700E37071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004915B70BFA0B662B52999EB4F797A2 /* Build configuration list for PBXNativeTarget "Pods-TomatoWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F0EEC798103802E82E2E386724B100 /* Debug */,
+				35FF3970D39D92917224EADF62D389A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F653E316AB5F825D3AD0CAE700E37071 /* Debug */,
+				9420A7205B8F85520AF134F4EE25F7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C040564D749F8D5CD7122B9FA2146A2 /* Build configuration list for PBXNativeTarget "Swifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896719AE49C47BEFF795B30F6F3C5B06 /* Debug */,
+				606DB5D7EB3BB681582EED8ED1CA9D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

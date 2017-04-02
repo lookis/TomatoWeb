@@ -16,6 +16,8 @@
 		532B53551E8F3A1E007836D9 /* me.lookis.tomato.NetworkHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		532B535B1E8F57BA007836D9 /* NetworkHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */; };
 		532B535F1E8FE26F007836D9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 532B535E1E8FE26F007836D9 /* Podfile */; };
+		532B53611E900935007836D9 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 532B53601E900935007836D9 /* proxy.pac */; };
+		5340408D1E900B8D0079ECB4 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5340408C1E900B8D0079ECB4 /* Swifter.framework */; };
 		53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */; };
 		53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2731E88E24000ACAFD8 /* Assets.xcassets */; };
 		53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2751E88E24100ACAFD8 /* MainMenu.xib */; };
@@ -26,6 +28,7 @@
 		53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C201E8D6083000C36D3 /* PrivoxyService.swift */; };
 		53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C221E8D6175000C36D3 /* KcpTunService.swift */; };
 		53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C241E8DFFAC000C36D3 /* ServiceController.swift */; };
+		A9EF91B48FE80212F0ECE076 /* Pods_TomatoWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D3283C05BAE796BFC81C0D /* Pods_TomatoWeb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		156D89583B3B2A8E2D0A9CE3 /* Pods-TomatoWeb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoWeb.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb.release.xcconfig"; sourceTree = "<group>"; };
 		532B533C1E8E54C1007836D9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		532B53401E8F1D2E007836D9 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = /Users/Lookis/Projects/TomatoWeb/TomatoWeb/NetworkController.swift; sourceTree = "<absolute>"; };
 		532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = me.lookis.tomato.NetworkHelper; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +83,9 @@
 		532B534F1E8F226E007836D9 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelperProtocol.swift; sourceTree = "<group>"; };
 		532B535A1E8F4E08007836D9 /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
-		532B535E1E8FE26F007836D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		532B535E1E8FE26F007836D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		532B53601E900935007836D9 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
+		5340408C1E900B8D0079ECB4 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = "../../Library/Developer/Xcode/DerivedData/TomatoWeb-ctzhlydeoexnkxajgaxhjtzoszhf/Build/Products/Debug/Swifter/Swifter.framework"; sourceTree = "<group>"; };
 		53E2D26E1E88E24000ACAFD8 /* TomatoWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E2D2731E88E24000ACAFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		53E63C201E8D6083000C36D3 /* PrivoxyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivoxyService.swift; sourceTree = "<group>"; };
 		53E63C221E8D6175000C36D3 /* KcpTunService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcpTunService.swift; sourceTree = "<group>"; };
 		53E63C241E8DFFAC000C36D3 /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
+		D4D3283C05BAE796BFC81C0D /* Pods_TomatoWeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomatoWeb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DB565C8FA9659C22348791 /* Pods-TomatoWeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoWeb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				532B533D1E8E54C1007836D9 /* Sparkle.framework in Frameworks */,
+				A9EF91B48FE80212F0ECE076 /* Pods_TomatoWeb.framework in Frameworks */,
+				5340408D1E900B8D0079ECB4 /* Swifter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +126,9 @@
 		532B53391E8E54A4007836D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5340408C1E900B8D0079ECB4 /* Swifter.framework */,
 				532B533C1E8E54C1007836D9 /* Sparkle.framework */,
+				D4D3283C05BAE796BFC81C0D /* Pods_TomatoWeb.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 				532B53481E8F20AC007836D9 /* NetworkHelper */,
 				53E2D26F1E88E24000ACAFD8 /* Products */,
 				532B53391E8E54A4007836D9 /* Frameworks */,
+				A42559E94A235382D9E864A6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,9 +188,19 @@
 		53E63C161E8D4413000C36D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				532B53601E900935007836D9 /* proxy.pac */,
 				53E63C1C1E8D46A3000C36D3 /* Services */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A42559E94A235382D9E864A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB565C8FA9659C22348791 /* Pods-TomatoWeb.debug.xcconfig */,
+				156D89583B3B2A8E2D0A9CE3 /* Pods-TomatoWeb.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,11 +227,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53E2D27B1E88E24100ACAFD8 /* Build configuration list for PBXNativeTarget "TomatoWeb" */;
 			buildPhases = (
+				CE588B4092B59DD9C5CB66BD /* [CP] Check Pods Manifest.lock */,
 				53E2D26A1E88E24000ACAFD8 /* Sources */,
 				53E2D26B1E88E24000ACAFD8 /* Frameworks */,
 				53E2D26C1E88E24000ACAFD8 /* Resources */,
 				532B533E1E8E54E2007836D9 /* CopyFiles */,
 				532B53541E8F3A04007836D9 /* CopyFiles */,
+				C2498B8F43F4631CA5D31042 /* [CP] Embed Pods Frameworks */,
+				1E15B72F63292029A13823FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,12 +297,61 @@
 			files = (
 				53E63C1D1E8D46A3000C36D3 /* Services in Resources */,
 				53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */,
+				532B53611E900935007836D9 /* proxy.pac in Resources */,
 				532B535F1E8FE26F007836D9 /* Podfile in Resources */,
 				53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E15B72F63292029A13823FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2498B8F43F4631CA5D31042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomatoWeb/Pods-TomatoWeb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE588B4092B59DD9C5CB66BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		532B53431E8F20AC007836D9 /* Sources */ = {
@@ -333,6 +408,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = TV7X9S92KX;
 				INFOPLIST_FILE = "$(SRCROOT)/NetworkHelper/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -355,6 +431,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = TV7X9S92KX;
 				INFOPLIST_FILE = "$(SRCROOT)/NetworkHelper/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -463,6 +540,7 @@
 		};
 		53E2D27C1E88E24100ACAFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DB565C8FA9659C22348791 /* Pods-TomatoWeb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -479,7 +557,8 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
 				);
-				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-D DEBUG $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -488,6 +567,7 @@
 		};
 		53E2D27D1E88E24100ACAFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156D89583B3B2A8E2D0A9CE3 /* Pods-TomatoWeb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -504,6 +584,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.web;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -520,6 +601,7 @@
 				532B534D1E8F20AC007836D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53E2D2691E88E24000ACAFD8 /* Build configuration list for PBXProject "TomatoWeb" */ = {
 			isa = XCConfigurationList;

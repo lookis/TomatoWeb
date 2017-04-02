@@ -9,11 +9,15 @@
 import Foundation
 import ServiceManagement
 
+let PACPort = 8085
 let kHelperToolMachServiceName = "me.lookis.tomato.NetworkHelper"
 
 public class NetworkController {
+    static let sharedInstance: NetworkController = NetworkController()
     
     var helperToolConnection:NSXPCConnection? = nil
+    
+    private init() { }
     
     public func installHelper() -> Bool{
         var success:Bool = false
@@ -39,10 +43,15 @@ public class NetworkController {
     
     public func clearNetworkSetting(){
         connectAndExecute {
-            let networkHelper = helperToolConnection?.remoteObjectProxyWithErrorHandler({(error:Error) -> Void in
-                print(error);
-            }) as! NetworkHelperProtocol
+            let networkHelper = helperToolConnection?.remoteObjectProxy as! NetworkHelperProtocol
             networkHelper.clearNetworkSetting()
+        }
+    }
+    
+    public func setAutomaticProxyConfig(){
+        connectAndExecute {
+            let networkHelper = helperToolConnection?.remoteObjectProxy as! NetworkHelperProtocol
+            networkHelper.setAutomaticProxyConfig(address: "http://127.0.0.1:\(PACPort)/proxy.pac")
         }
     }
     

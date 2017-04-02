@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
     </dependencies>
     <objects>
@@ -28,7 +27,7 @@
                 <menuItem title="Tomato Web: On" id="JK9-vS-eaf">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="Turn On" id="6GE-8P-fS9">
+                <menuItem title="Turn Off" id="6GE-8P-fS9">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="handleTurnOnOff:" target="djV-ox-Keg" id="3XW-ai-pLy"/>

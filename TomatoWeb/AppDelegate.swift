@@ -8,12 +8,14 @@
 
 import Cocoa
 import SystemConfiguration
+import Swifter
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let NOT_FIRST_LAUNCH = "NOT_FIRST_LAUNCH"
     let HELPER_INSTALLED = "HELPER_INSTALLED"
+    let server = HttpServer();
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         #if DEBUG
@@ -21,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSLog("DEBUG MODE")
         #endif
         let serviceController = ServiceController()
-        let networkController = NetworkController()
+        let networkController = NetworkController.sharedInstance
         //first launch
         if(!UserDefaults.standard.bool(forKey: NOT_FIRST_LAUNCH)){
             UserDefaults.standard.set(true, forKey: NOT_FIRST_LAUNCH)
@@ -33,11 +35,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         serviceController.installService()
-        networkController.clearNetworkSetting()
+        
+        server["/proxy.pac"] = shareFile(Bundle.main.resourcePath! + "/proxy.pac")
+        try? server.start(in_port_t(PACPort), forceIPv4: true)
+        networkController.setAutomaticProxyConfig()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+        NetworkController.sharedInstance.clearNetworkSetting()
+        server.stop()
     }
 
 }
