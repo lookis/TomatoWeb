@@ -19,6 +19,7 @@
 		532B535B1E8F57BA007836D9 /* NetworkHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */; };
 		532B535F1E8FE26F007836D9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 532B535E1E8FE26F007836D9 /* Podfile */; };
 		532B53611E900935007836D9 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 532B53601E900935007836D9 /* proxy.pac */; };
+		538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */; };
 		53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */; };
 		53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2731E88E24000ACAFD8 /* Assets.xcassets */; };
 		53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2751E88E24100ACAFD8 /* MainMenu.xib */; };
@@ -102,6 +103,7 @@
 		532B535E1E8FE26F007836D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		532B53601E900935007836D9 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
 		5340408C1E900B8D0079ECB4 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = "../../Library/Developer/Xcode/DerivedData/TomatoWeb-ctzhlydeoexnkxajgaxhjtzoszhf/Build/Products/Debug/Swifter/Swifter.framework"; sourceTree = "<group>"; };
+		5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalizedExtension.swift; sourceTree = "<group>"; };
 		53E2D26E1E88E24000ACAFD8 /* TomatoWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E2D2731E88E24000ACAFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				53E2D2781E88E24100ACAFD8 /* Info.plist */,
 				53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */,
 				53E63C241E8DFFAC000C36D3 /* ServiceController.swift */,
+				5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */,
 			);
 			path = TomatoWeb;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */,
 				53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */,
 				53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */,
+				538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */,
 				53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

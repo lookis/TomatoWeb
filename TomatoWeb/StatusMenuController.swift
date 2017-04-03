@@ -28,10 +28,10 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = statusMenu
         //start service
-        connectionStatus.title = "Tomato Web: On"
-        connectionSwitch.title = "Turn Off"
+        connectionStatus.title = "Tomato Web: On".localized
+        connectionSwitch.title = "Turn Off".localized
         //version
-        version.title = "Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)"
+        version.title = "\("Version".localized): \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)"
         //launch on startup
         launchAtLogin.state = UserDefaults.standard.bool(forKey: NOT_LAUNCH_AT_STARTUP) ? NSOffState : NSOnState
     }
@@ -51,12 +51,12 @@ class StatusMenuController: NSObject {
     }
     @IBAction func handleTurnOnOff(_ sender: NSMenuItem) {
         if (proxyOn){
-            connectionSwitch.title = "Turn On"
-            connectionStatus.title = "Tomato Web: Off"
+            connectionSwitch.title = "Turn On".localized
+            connectionStatus.title = "Tomato Web: Off".localized
             networkController.clearNetworkSetting()
         }else{
-            connectionSwitch.title = "Turn Off"
-            connectionStatus.title = "Tomato Web: On"
+            connectionSwitch.title = "Turn Off".localized
+            connectionStatus.title = "Tomato Web: On".localized
             networkController.setAutomaticProxyConfig()
         }
         proxyOn = !proxyOn
