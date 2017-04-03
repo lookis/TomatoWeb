@@ -51,6 +51,6 @@
 	<key>SUShowReleaseNotes</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>http://127.0.0.1:8080/appcast.xml</string>
+	<string>http://tomato.lookis.me/appcast.xml</string>
 </dict>
 </plist>
