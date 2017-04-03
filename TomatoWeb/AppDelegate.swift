@@ -10,6 +10,7 @@ import Cocoa
 import SystemConfiguration
 import ServiceManagement
 import Swifter
+import Sparkle
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -43,8 +44,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         server["/proxy.pac"] = shareFile(Bundle.main.resourcePath! + "/proxy.pac")
         try? server.start(in_port_t(PACPort), forceIPv4: true)
         networkController.setAutomaticProxyConfig()
-        
-        
+        SUUpdater.shared().automaticallyDownloadsUpdates = true
+        SUUpdater.shared().automaticallyChecksForUpdates = true
+        SUUpdater.shared().resetUpdateCycle();
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
