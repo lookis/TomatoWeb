@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Sparkle
 
 class StatusMenuController: NSObject {
     
@@ -15,6 +16,7 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var connectionSwitch: NSMenuItem!
     @IBOutlet weak var connectionStatus: NSMenuItem!
+    @IBOutlet weak var version: NSMenuItem!
     @IBOutlet weak var launchAtLogin: NSMenuItem!
     
     let NOT_LAUNCH_AT_STARTUP = "NOT_LAUNCH_AT_STARTUP"
@@ -28,6 +30,8 @@ class StatusMenuController: NSObject {
         //start service
         connectionStatus.title = "Tomato Web: On"
         connectionSwitch.title = "Turn Off"
+        //version
+        version.title = "Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)"
         //launch on startup
         launchAtLogin.state = UserDefaults.standard.bool(forKey: NOT_LAUNCH_AT_STARTUP) ? NSOffState : NSOnState
     }

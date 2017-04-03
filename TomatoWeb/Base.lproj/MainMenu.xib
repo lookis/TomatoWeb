@@ -17,8 +17,9 @@
             <connections>
                 <outlet property="connectionStatus" destination="JK9-vS-eaf" id="hg6-0M-rfI"/>
                 <outlet property="connectionSwitch" destination="6GE-8P-fS9" id="RRm-Bw-78Z"/>
-                <outlet property="launchAtLogin" destination="KVN-DI-klt" id="Htg-sK-Zne"/>
+                <outlet property="launchAtLogin" destination="01s-4M-2ZZ" id="Iyc-V4-0TF"/>
                 <outlet property="statusMenu" destination="dKA-AY-x4k" id="1k3-Vq-DQI"/>
+                <outlet property="version" destination="UJG-cx-GQv" id="Rp9-qZ-dQm"/>
             </connections>
         </customObject>
         <customObject id="U7w-tz-zzg" customClass="SUUpdater"/>
@@ -33,13 +34,13 @@
                         <action selector="handleTurnOnOff:" target="djV-ox-Keg" id="3XW-ai-pLy"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Launch on startup" id="KVN-DI-klt">
+                <menuItem title="Launch At Login" id="01s-4M-2ZZ">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="handleLaunchAtLogin:" target="djV-ox-Keg" id="MA4-Om-Tzi"/>
-                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="rrv-yb-Xvj"/>
+                <menuItem title="Version: 0" id="UJG-cx-GQv">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="Quit" id="nJs-ox-Hha">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

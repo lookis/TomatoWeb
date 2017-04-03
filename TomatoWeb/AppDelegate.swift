@@ -8,13 +8,15 @@
 
 import Cocoa
 import SystemConfiguration
+import ServiceManagement
 import Swifter
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let NOT_FIRST_LAUNCH = "NOT_FIRST_LAUNCH"
-    let HELPER_INSTALLED = "HELPER_INSTALLED"
+    let CURRENT_VERSION = "CURRENT_VERSION"
+    
     let server = HttpServer();
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -22,23 +24,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
         NSLog("DEBUG MODE")
         #endif
+        if UserDefaults.standard.string(forKey: CURRENT_VERSION) != (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String){
+            UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+            UserDefaults.standard.set((Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String), forKey: CURRENT_VERSION)
+            NSLog("clean UserDefaults on update or new install")
+        }
+        
+        SMLoginItemSetEnabled("me.lookis.tomato.Launcher" as CFString, true);
         let serviceController = ServiceController()
         let networkController = NetworkController.sharedInstance
         //first launch
         if(!UserDefaults.standard.bool(forKey: NOT_FIRST_LAUNCH)){
             UserDefaults.standard.set(true, forKey: NOT_FIRST_LAUNCH)
-            serviceController.uninstallService();
+            serviceController.uninstallService()
         }
-        if(!UserDefaults.standard.bool(forKey: HELPER_INSTALLED)){
-            let result = networkController.installHelper()
-            UserDefaults.standard.set(result, forKey: HELPER_INSTALLED)
-        }
-        
         serviceController.installService()
-        
+        networkController.ping()
         server["/proxy.pac"] = shareFile(Bundle.main.resourcePath! + "/proxy.pac")
         try? server.start(in_port_t(PACPort), forceIPv4: true)
         networkController.setAutomaticProxyConfig()
+        
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

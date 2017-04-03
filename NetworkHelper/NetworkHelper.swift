@@ -34,6 +34,10 @@ public class NetworkHelper: NSObject, NSXPCListenerDelegate, NetworkHelperProtoc
         return true
     }
     
+    public func ping(callback: (String) -> Void) {
+        callback("pong")
+    }
+    
     public func clearNetworkSetting() {
         let proxies:Dictionary = [kCFNetworkProxiesHTTPEnable as NSString: 0,
                                   kCFNetworkProxiesHTTPSEnable as NSString: 0,

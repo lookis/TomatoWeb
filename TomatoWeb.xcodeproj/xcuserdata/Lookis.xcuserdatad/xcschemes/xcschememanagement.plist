@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Launcher.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>LauncherApplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>NetworkHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,21 @@
 			<true/>
 		</dict>
 		<key>53E2D26D1E88E24000ACAFD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53F319961E913751009D5A1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53F319A41E913751009D5A1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53F319AF1E913751009D5A1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -55,6 +55,15 @@ public class NetworkController {
         }
     }
     
+    public func ping(){
+        connectAndExecute {
+            let networkHelper = helperToolConnection?.remoteObjectProxy as! NetworkHelperProtocol
+            networkHelper.ping(callback: {(pong:String) -> Void in
+                NSLog("ping");
+            })
+        }
+    }
+    
     func connectAndExecute(block:()->Void){
         connectToHelperTool()
         block()
@@ -69,6 +78,11 @@ public class NetworkController {
                 OperationQueue.main.addOperation {
                     self.helperToolConnection = nil
                     NSLog("connection invalid")
+                    if(self.installHelper()){
+                        NSLog("reinstall helper success")
+                    }else{
+                        NSLog("install helper failure")
+                    }
                 }
             }
             helperToolConnection?.resume()

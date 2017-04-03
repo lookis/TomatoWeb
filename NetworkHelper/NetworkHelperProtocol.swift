@@ -10,6 +10,8 @@ import Foundation
 
 @objc protocol NetworkHelperProtocol {
     
+    func ping(callback: (_ pong:String) -> Void)
+    
     func clearNetworkSetting()
     
     func setAutomaticProxyConfig(address:String!)
