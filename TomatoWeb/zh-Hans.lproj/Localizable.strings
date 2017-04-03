@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TomatoWeb
+
+  Created by Lookis on 03/04/2017.
+  Copyright © 2017 Lookis. All rights reserved.
+*/
+"Tomato Web: On" = "Tomato Web: 已连接";
+"Tomato Web: Off" = "Tomato Web: 已断开";
+"Turn Off" = "断开网络";
+"Turn On" = "连接网络";
+"Version" = "版本";

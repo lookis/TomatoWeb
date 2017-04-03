@@ -1,0 +1,15 @@
+
+/* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "01s-4M-2ZZ"; */
+"01s-4M-2ZZ.title" = "登陆时启动";
+
+/* Class = "NSMenuItem"; title = "Turn Off"; ObjectID = "6GE-8P-fS9"; */
+"6GE-8P-fS9.title" = "关闭";
+
+/* Class = "NSMenuItem"; title = "Tomato Web: On"; ObjectID = "JK9-vS-eaf"; */
+"JK9-vS-eaf.title" = "Tomato Web: 已连接";
+
+/* Class = "NSMenuItem"; title = "Version: 0"; ObjectID = "UJG-cx-GQv"; */
+"UJG-cx-GQv.title" = "版本号: 0";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "nJs-ox-Hha"; */
+"nJs-ox-Hha.title" = "退出";
