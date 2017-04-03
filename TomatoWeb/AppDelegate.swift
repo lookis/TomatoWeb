@@ -30,8 +30,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             UserDefaults.standard.set((Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String), forKey: CURRENT_VERSION)
             NSLog("clean UserDefaults on update or new install")
         }
-        
-        SMLoginItemSetEnabled("me.lookis.tomato.Launcher" as CFString, true);
+        let disableLoginItem = SMLoginItemSetEnabled("me.lookis.tomato.Launcher" as CFString, false);
+        let loginItem = SMLoginItemSetEnabled("me.lookis.tomato.Launcher" as CFString, true);
+        NSLog("LoginItem: \(disableLoginItem)/\(loginItem)")
         let serviceController = ServiceController()
         let networkController = NetworkController.sharedInstance
         //first launch
