@@ -26,6 +26,9 @@ class ServiceController {
     let LAUNCH_AGENT_PLIST = "\(NSHomeDirectory())/Library/LaunchAgents"
     
     public func installService() {
+        if !(FileManager.default.fileExists(atPath: LAUNCH_AGENT_PLIST)){
+            try? FileManager.default.createDirectory(atPath: LAUNCH_AGENT_PLIST, withIntermediateDirectories: true)
+        }
         services.forEach({(key:String, value:Dictionary<String, Any>) -> Void in
             NSLog("initialize \(key)")
             let serviceType:ServiceProtocol.Type = (value["service"] as! ServiceProtocol.Type)
