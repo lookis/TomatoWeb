@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "tomato@16.png",
+      "filename" : "TomatoLogo(BW)@16.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "tomato@32.png",
+      "filename" : "TomatoLogo(BW)@32.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "TomatoLogo(BW)@48.png",
       "scale" : "3x"
     }
   ],

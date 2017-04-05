@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "tomato@16.png",
+      "filename" : "TomatoLogo@16.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "tomato@32-1.png",
+      "filename" : "TomatoLogo@32-1.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "tomato@32.png",
+      "filename" : "TomatoLogo@32.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "tomato@64.png",
+      "filename" : "TomatoLogo@64.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "tomato@128.png",
+      "filename" : "TomatoLogo@128.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "tomato@256-1.png",
+      "filename" : "TomatoLogo@256-1.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "tomato@256.png",
+      "filename" : "TomatoLogo@256.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "tomato@512-1.png",
+      "filename" : "TomatoLogo@512-1.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "tomato@512.png",
+      "filename" : "TomatoLogo@512.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "tomato@1024.png",
+      "filename" : "TomatoLogo@1024.png",
       "scale" : "2x"
     }
   ],
