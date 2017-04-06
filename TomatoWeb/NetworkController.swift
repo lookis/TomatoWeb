@@ -14,7 +14,7 @@ let kHelperToolMachServiceName = "me.lookis.tomato.NetworkHelper"
 
 public class NetworkController {
     static let sharedInstance: NetworkController = NetworkController()
-    
+    let lock:NSLock = NSLock.init()
     var helperToolConnection:NSXPCConnection? = nil
     
     private init() { }
@@ -51,6 +51,7 @@ public class NetworkController {
     public func setAutomaticProxyConfig(){
         connectAndExecute {
             let networkHelper = helperToolConnection?.remoteObjectProxy as! NetworkHelperProtocol
+            NSLog("setAutomaticProxyConfig")
             networkHelper.setAutomaticProxyConfig(address: "http://127.0.0.1:\(PACPort)/proxy.pac")
         }
     }
@@ -71,22 +72,27 @@ public class NetworkController {
     
     func connectToHelperTool(){
         if (helperToolConnection == nil){
-            helperToolConnection = NSXPCConnection.init(machServiceName: kHelperToolMachServiceName, options: NSXPCConnection.Options.privileged)
-            helperToolConnection?.remoteObjectInterface = NSXPCInterface.init(with: NetworkHelperProtocol.self)
-            helperToolConnection?.invalidationHandler = {() -> Void in
-                self.helperToolConnection?.invalidationHandler = nil
-                OperationQueue.main.addOperation {
-                    self.helperToolConnection = nil
+            lock.lock()
+            defer{
+                lock.unlock()
+            }
+            if (helperToolConnection == nil){
+                helperToolConnection = NSXPCConnection.init(machServiceName: kHelperToolMachServiceName, options: NSXPCConnection.Options.privileged)
+                helperToolConnection?.remoteObjectInterface = NSXPCInterface.init(with: NetworkHelperProtocol.self)
+                helperToolConnection?.invalidationHandler = {() -> Void in
                     NSLog("connection invalid")
+                    self.lock.lock()
+                    self.helperToolConnection?.invalidationHandler = nil
+                    self.helperToolConnection = nil
                     if(self.installHelper()){
                         NSLog("reinstall helper success")
                     }else{
                         NSLog("install helper failure")
                     }
+                    self.lock.unlock()
                 }
+                helperToolConnection?.resume()
             }
-            helperToolConnection?.resume()
         }
     }
-    
 }
