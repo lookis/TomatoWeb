@@ -1,6 +1,6 @@
 {
     "localaddr": "127.0.0.1:8488",
-    "remoteaddr": "123.57.55.168:8489",
+    "remoteaddr": "123.56.17.90:8489",
     "key": "it's not a secret",
     "mode": "fast2"
 }
