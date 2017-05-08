@@ -1,4 +1,5 @@
 use_frameworks!
-target "TomatoWeb" do
+target "TomatoNetwork" do
     pod 'Swifter', '~> 1.3.3'
+    pod 'Apollo'
 end

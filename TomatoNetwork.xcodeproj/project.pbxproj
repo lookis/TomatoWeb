@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B64C00D9809C10C17299050 /* Pods_TomatoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D55DB5445515A2C9027817 /* Pods_TomatoNetwork.framework */; };
+		5328E7441E91E53B00E103EB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5328E7431E91E53B00E103EB /* dsa_pub.pem */; };
+		5328E7451E91E86500E103EB /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5340408C1E900B8D0079ECB4 /* Swifter.framework */; };
+		532B533D1E8E54C1007836D9 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532B533C1E8E54C1007836D9 /* Sparkle.framework */; };
+		532B533F1E8E551C007836D9 /* Sparkle.framework in [CP] Copy Sparkle Files */ = {isa = PBXBuildFile; fileRef = 532B533C1E8E54C1007836D9 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		532B53411E8F1D2E007836D9 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53401E8F1D2E007836D9 /* NetworkController.swift */; };
+		532B534A1E8F20AC007836D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53491E8F20AC007836D9 /* main.swift */; };
+		532B53501E8F226E007836D9 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B534F1E8F226E007836D9 /* NetworkHelper.swift */; };
+		532B53521E8F24A3007836D9 /* NetworkHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */; };
+		532B53551E8F3A1E007836D9 /* me.lookis.tomato.NetworkHelper in [CP] Copy Network Helper */ = {isa = PBXBuildFile; fileRef = 532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		532B535B1E8F57BA007836D9 /* NetworkHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */; };
+		532B535F1E8FE26F007836D9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 532B535E1E8FE26F007836D9 /* Podfile */; };
+		532B53611E900935007836D9 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 532B53601E900935007836D9 /* proxy.pac */; };
+		538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */; };
+		538E3EC91E927A18009AB4DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538E3ECB1E927A18009AB4DA /* Localizable.strings */; };
+		53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */; };
+		53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2731E88E24000ACAFD8 /* Assets.xcassets */; };
+		53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2751E88E24100ACAFD8 /* MainMenu.xib */; };
+		53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */; };
+		53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */; };
+		53E63C1D1E8D46A3000C36D3 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 53E63C1C1E8D46A3000C36D3 /* Services */; };
+		53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */; };
+		53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C201E8D6083000C36D3 /* PrivoxyService.swift */; };
+		53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C221E8D6175000C36D3 /* KcpTunService.swift */; };
+		53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C241E8DFFAC000C36D3 /* ServiceController.swift */; };
+		53F3199A1E913751009D5A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F319991E913751009D5A1C /* AppDelegate.swift */; };
+		53F3199C1E913751009D5A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F3199B1E913751009D5A1C /* Assets.xcassets */; };
+		53F3199F1E913751009D5A1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F3199D1E913751009D5A1C /* MainMenu.xib */; };
+		53F319C31E9138B5009D5A1C /* Launcher.app in [CP] Copy Launcher */ = {isa = PBXBuildFile; fileRef = 53F319971E913751009D5A1C /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		532B53581E8F4D2B007836D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E2D2661E88E24000ACAFD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532B53461E8F20AC007836D9;
+			remoteInfo = NetworkHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		532B533E1E8E54E2007836D9 /* [CP] Copy Sparkle Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				532B533F1E8E551C007836D9 /* Sparkle.framework in [CP] Copy Sparkle Files */,
+			);
+			name = "[CP] Copy Sparkle Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532B53451E8F20AC007836D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		532B53541E8F3A04007836D9 /* [CP] Copy Network Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				532B53551E8F3A1E007836D9 /* me.lookis.tomato.NetworkHelper in [CP] Copy Network Helper */,
+			);
+			name = "[CP] Copy Network Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F319C21E9138AA009D5A1C /* [CP] Copy Launcher */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				53F319C31E9138B5009D5A1C /* Launcher.app in [CP] Copy Launcher */,
+			);
+			name = "[CP] Copy Launcher";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EA856DD1A3DF9FDE78D4F77 /* Pods-TomatoNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		33DEDF9C0CACBE8AEAE28EDF /* Pods-TomatoNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		5328E7431E91E53B00E103EB /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		532B533C1E8E54C1007836D9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		532B53401E8F1D2E007836D9 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = /Users/Lookis/Projects/TomatoWeb/TomatoNetwork/NetworkController.swift; sourceTree = "<absolute>"; };
+		532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = me.lookis.tomato.NetworkHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		532B53491E8F20AC007836D9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		532B534E1E8F2140007836D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532B534F1E8F226E007836D9 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelperProtocol.swift; sourceTree = "<group>"; };
+		532B535A1E8F4E08007836D9 /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		532B535E1E8FE26F007836D9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		532B53601E900935007836D9 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
+		5340408C1E900B8D0079ECB4 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = "../../Library/Developer/Xcode/DerivedData/TomatoWeb-ctzhlydeoexnkxajgaxhjtzoszhf/Build/Products/Debug/Swifter/Swifter.framework"; sourceTree = "<group>"; };
+		5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalizedExtension.swift; sourceTree = "<group>"; };
+		538E3EC01E92753E009AB4DA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		538E3EC11E92753F009AB4DA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		538E3ECA1E927A18009AB4DA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		538E3ECC1E927A1C009AB4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		53B7DF821EC04A8300B87F34 /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = "../../Library/Developer/Xcode/DerivedData/TomatoWeb-ctzhlydeoexnkxajgaxhjtzoszhf/Build/Products/Debug/Apollo/Apollo.framework"; sourceTree = "<group>"; };
+		53E2D26E1E88E24000ACAFD8 /* TomatoNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53E2D2731E88E24000ACAFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53E2D2761E88E24100ACAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		53E2D2781E88E24100ACAFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		53E63C1C1E8D46A3000C36D3 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
+		53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLocalService.swift; sourceTree = "<group>"; };
+		53E63C201E8D6083000C36D3 /* PrivoxyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivoxyService.swift; sourceTree = "<group>"; };
+		53E63C221E8D6175000C36D3 /* KcpTunService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcpTunService.swift; sourceTree = "<group>"; };
+		53E63C241E8DFFAC000C36D3 /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
+		53F319971E913751009D5A1C /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F319991E913751009D5A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53F3199B1E913751009D5A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53F3199E1E913751009D5A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		53F319A01E913751009D5A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D55DB5445515A2C9027817 /* Pods_TomatoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomatoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		532B53441E8F20AC007836D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E2D26B1E88E24000ACAFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B533D1E8E54C1007836D9 /* Sparkle.framework in Frameworks */,
+				5328E7451E91E86500E103EB /* Swifter.framework in Frameworks */,
+				1B64C00D9809C10C17299050 /* Pods_TomatoNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F319941E913751009D5A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532B53391E8E54A4007836D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53B7DF821EC04A8300B87F34 /* Apollo.framework */,
+				5340408C1E900B8D0079ECB4 /* Swifter.framework */,
+				532B533C1E8E54C1007836D9 /* Sparkle.framework */,
+				89D55DB5445515A2C9027817 /* Pods_TomatoNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		532B53481E8F20AC007836D9 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				532B53491E8F20AC007836D9 /* main.swift */,
+				532B534E1E8F2140007836D9 /* Info.plist */,
+				532B534F1E8F226E007836D9 /* NetworkHelper.swift */,
+				532B53511E8F24A3007836D9 /* NetworkHelperProtocol.swift */,
+				532B535A1E8F4E08007836D9 /* Launchd.plist */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		53E2D2651E88E24000ACAFD8 = {
+			isa = PBXGroup;
+			children = (
+				532B535E1E8FE26F007836D9 /* Podfile */,
+				53E63C161E8D4413000C36D3 /* Resources */,
+				53E2D2701E88E24000ACAFD8 /* TomatoNetwork */,
+				532B53481E8F20AC007836D9 /* NetworkHelper */,
+				53F319981E913751009D5A1C /* Launcher */,
+				53E2D26F1E88E24000ACAFD8 /* Products */,
+				532B53391E8E54A4007836D9 /* Frameworks */,
+				A42559E94A235382D9E864A6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		53E2D26F1E88E24000ACAFD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53E2D26E1E88E24000ACAFD8 /* TomatoNetwork.app */,
+				532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */,
+				53F319971E913751009D5A1C /* Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53E2D2701E88E24000ACAFD8 /* TomatoNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				538E3ECB1E927A18009AB4DA /* Localizable.strings */,
+				532B53401E8F1D2E007836D9 /* NetworkController.swift */,
+				53E63C201E8D6083000C36D3 /* PrivoxyService.swift */,
+				53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */,
+				53E63C221E8D6175000C36D3 /* KcpTunService.swift */,
+				53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */,
+				53E2D2731E88E24000ACAFD8 /* Assets.xcassets */,
+				53E2D2751E88E24100ACAFD8 /* MainMenu.xib */,
+				53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */,
+				53E2D2781E88E24100ACAFD8 /* Info.plist */,
+				53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */,
+				53E63C241E8DFFAC000C36D3 /* ServiceController.swift */,
+				5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */,
+			);
+			path = TomatoNetwork;
+			sourceTree = "<group>";
+		};
+		53E63C161E8D4413000C36D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5328E7431E91E53B00E103EB /* dsa_pub.pem */,
+				532B53601E900935007836D9 /* proxy.pac */,
+				53E63C1C1E8D46A3000C36D3 /* Services */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		53F319981E913751009D5A1C /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				53F319991E913751009D5A1C /* AppDelegate.swift */,
+				53F3199B1E913751009D5A1C /* Assets.xcassets */,
+				53F3199D1E913751009D5A1C /* MainMenu.xib */,
+				53F319A01E913751009D5A1C /* Info.plist */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		A42559E94A235382D9E864A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33DEDF9C0CACBE8AEAE28EDF /* Pods-TomatoNetwork.debug.xcconfig */,
+				0EA856DD1A3DF9FDE78D4F77 /* Pods-TomatoNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		532B53461E8F20AC007836D9 /* NetworkHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532B534B1E8F20AC007836D9 /* Build configuration list for PBXNativeTarget "NetworkHelper" */;
+			buildPhases = (
+				532B53431E8F20AC007836D9 /* Sources */,
+				532B53441E8F20AC007836D9 /* Frameworks */,
+				532B53451E8F20AC007836D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkHelper;
+			productName = NetworkHelper;
+			productReference = 532B53471E8F20AC007836D9 /* me.lookis.tomato.NetworkHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		53E2D26D1E88E24000ACAFD8 /* TomatoNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53E2D27B1E88E24100ACAFD8 /* Build configuration list for PBXNativeTarget "TomatoNetwork" */;
+			buildPhases = (
+				CE588B4092B59DD9C5CB66BD /* [CP] Check Pods Manifest.lock */,
+				538F8E811EC05148007B67F2 /* Generate Apollo GraphQL API */,
+				53E2D26A1E88E24000ACAFD8 /* Sources */,
+				53E2D26B1E88E24000ACAFD8 /* Frameworks */,
+				53E2D26C1E88E24000ACAFD8 /* Resources */,
+				532B533E1E8E54E2007836D9 /* [CP] Copy Sparkle Files */,
+				532B53541E8F3A04007836D9 /* [CP] Copy Network Helper */,
+				C2498B8F43F4631CA5D31042 /* [CP] Embed Pods Frameworks */,
+				1E15B72F63292029A13823FD /* [CP] Copy Pods Resources */,
+				53F319C21E9138AA009D5A1C /* [CP] Copy Launcher */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532B53591E8F4D2B007836D9 /* PBXTargetDependency */,
+			);
+			name = TomatoNetwork;
+			productName = TomatoWeb;
+			productReference = 53E2D26E1E88E24000ACAFD8 /* TomatoNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53F319961E913751009D5A1C /* Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F319BD1E913751009D5A1C /* Build configuration list for PBXNativeTarget "Launcher" */;
+			buildPhases = (
+				53F319931E913751009D5A1C /* Sources */,
+				53F319941E913751009D5A1C /* Frameworks */,
+				53F319951E913751009D5A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Launcher;
+			productName = Launcher;
+			productReference = 53F319971E913751009D5A1C /* Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53E2D2661E88E24000ACAFD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					Services,
+				);
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Lookis;
+				TargetAttributes = {
+					532B53461E8F20AC007836D9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TV7X9S92KX;
+						ProvisioningStyle = Manual;
+					};
+					53E2D26D1E88E24000ACAFD8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TV7X9S92KX;
+						ProvisioningStyle = Manual;
+					};
+					53F319961E913751009D5A1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TV7X9S92KX;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 53E2D2691E88E24000ACAFD8 /* Build configuration list for PBXProject "TomatoNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 53E2D2651E88E24000ACAFD8;
+			productRefGroup = 53E2D26F1E88E24000ACAFD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53E2D26D1E88E24000ACAFD8 /* TomatoNetwork */,
+				532B53461E8F20AC007836D9 /* NetworkHelper */,
+				53F319961E913751009D5A1C /* Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53E2D26C1E88E24000ACAFD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E63C1D1E8D46A3000C36D3 /* Services in Resources */,
+				5328E7441E91E53B00E103EB /* dsa_pub.pem in Resources */,
+				53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */,
+				538E3EC91E927A18009AB4DA /* Localizable.strings in Resources */,
+				532B53611E900935007836D9 /* proxy.pac in Resources */,
+				532B535F1E8FE26F007836D9 /* Podfile in Resources */,
+				53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F319951E913751009D5A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F3199C1E913751009D5A1C /* Assets.xcassets in Resources */,
+				53F3199F1E913751009D5A1C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E15B72F63292029A13823FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		538F8E811EC05148007B67F2 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/Resources/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
+		};
+		C2498B8F43F4631CA5D31042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE588B4092B59DD9C5CB66BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		532B53431E8F20AC007836D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B53521E8F24A3007836D9 /* NetworkHelperProtocol.swift in Sources */,
+				532B53501E8F226E007836D9 /* NetworkHelper.swift in Sources */,
+				532B534A1E8F20AC007836D9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E2D26A1E88E24000ACAFD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532B53411E8F1D2E007836D9 /* NetworkController.swift in Sources */,
+				53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */,
+				53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */,
+				532B535B1E8F57BA007836D9 /* NetworkHelperProtocol.swift in Sources */,
+				53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */,
+				53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */,
+				53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */,
+				53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */,
+				538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */,
+				53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F319931E913751009D5A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F3199A1E913751009D5A1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532B53591E8F4D2B007836D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532B53461E8F20AC007836D9 /* NetworkHelper */;
+			targetProxy = 532B53581E8F4D2B007836D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		538E3ECB1E927A18009AB4DA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				538E3ECA1E927A18009AB4DA /* zh-Hans */,
+				538E3ECC1E927A1C009AB4DA /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		53E2D2751E88E24100ACAFD8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53E2D2761E88E24100ACAFD8 /* Base */,
+				538E3EC01E92753E009AB4DA /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		53F3199D1E913751009D5A1C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F3199E1E913751009D5A1C /* Base */,
+				538E3EC11E92753F009AB4DA /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		532B534C1E8F20AC007836D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				INFOPLIST_FILE = "$(SRCROOT)/NetworkHelper/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					NetworkHelper/Launchd.plist,
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					NetworkHelper/Info.plist,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.NetworkHelper;
+				PRODUCT_NAME = me.lookis.tomato.NetworkHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		532B534D1E8F20AC007836D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				INFOPLIST_FILE = "$(SRCROOT)/NetworkHelper/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					NetworkHelper/Launchd.plist,
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					NetworkHelper/Info.plist,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.NetworkHelper;
+				PRODUCT_NAME = me.lookis.tomato.NetworkHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53E2D2791E88E24100ACAFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53E2D27A1E88E24100ACAFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		53E2D27C1E88E24100ACAFD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DEDF9C0CACBE8AEAE28EDF /* Pods-TomatoNetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TomatoNetwork/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
+				);
+				OTHER_SWIFT_FLAGS = "-D DEBUG $(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.web;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53E2D27D1E88E24100ACAFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA856DD1A3DF9FDE78D4F77 /* Pods-TomatoNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TomatoNetwork/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Services/SSLocal/3.0.5",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.web;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53F319B71E913751009D5A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53F319B81E913751009D5A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TV7X9S92KX;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lookis.tomato.Launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532B534B1E8F20AC007836D9 /* Build configuration list for PBXNativeTarget "NetworkHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532B534C1E8F20AC007836D9 /* Debug */,
+				532B534D1E8F20AC007836D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53E2D2691E88E24000ACAFD8 /* Build configuration list for PBXProject "TomatoNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E2D2791E88E24100ACAFD8 /* Debug */,
+				53E2D27A1E88E24100ACAFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53E2D27B1E88E24100ACAFD8 /* Build configuration list for PBXNativeTarget "TomatoNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E2D27C1E88E24100ACAFD8 /* Debug */,
+				53E2D27D1E88E24100ACAFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F319BD1E913751009D5A1C /* Build configuration list for PBXNativeTarget "Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F319B71E913751009D5A1C /* Debug */,
+				53F319B81E913751009D5A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53E2D2661E88E24000ACAFD8 /* Project object */;
+}
