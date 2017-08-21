@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftState.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Swifter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0434EEFE642623BD6DDBD1D6CDEAB32C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36C76FCD56CD2B6FFB2C6648C9425DD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>482FE5904723C09F9E4985A04F377222</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FF98D86486728B58337291E9AA9C198</key>
 		<dict>
 			<key>primary</key>
 			<true/>

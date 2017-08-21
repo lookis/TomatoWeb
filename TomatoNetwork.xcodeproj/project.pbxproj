@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B64C00D9809C10C17299050 /* Pods_TomatoNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D55DB5445515A2C9027817 /* Pods_TomatoNetwork.framework */; };
+		530BA3F31EC590CE00DDA44D /* HorizontalCenteredTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BA3F21EC590CE00DDA44D /* HorizontalCenteredTextFieldCell.swift */; };
+		530BA3F51EC5A21900DDA44D /* HorizontalCenteredSecureTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BA3F41EC5A21900DDA44D /* HorizontalCenteredSecureTextFieldCell.swift */; };
+		5328008C1EC2BFBD0064F4C5 /* TomatoNetwork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5328008B1EC2BFBD0064F4C5 /* TomatoNetwork.storyboard */; };
+		5328008E1EC2C76B0064F4C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328008D1EC2C76B0064F4C5 /* LoginViewController.swift */; };
 		5328E7441E91E53B00E103EB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5328E7431E91E53B00E103EB /* dsa_pub.pem */; };
 		5328E7451E91E86500E103EB /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5340408C1E900B8D0079ECB4 /* Swifter.framework */; };
 		532B533D1E8E54C1007836D9 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532B533C1E8E54C1007836D9 /* Sparkle.framework */; };
@@ -22,10 +26,12 @@
 		532B53611E900935007836D9 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 532B53601E900935007836D9 /* proxy.pac */; };
 		538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */; };
 		538E3EC91E927A18009AB4DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538E3ECB1E927A18009AB4DA /* Localizable.strings */; };
+		5393E8821ED6DB0E00F7E5B0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5393E8811ED6DB0E00F7E5B0 /* MBProgressHUD.m */; };
 		53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */; };
 		53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2731E88E24000ACAFD8 /* Assets.xcassets */; };
 		53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53E2D2751E88E24100ACAFD8 /* MainMenu.xib */; };
 		53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */; };
+		53E2D5561ED2DD8D0062A01A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2D5551ED2DD8D0062A01A /* MainViewController.swift */; };
 		53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */; };
 		53E63C1D1E8D46A3000C36D3 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 53E63C1C1E8D46A3000C36D3 /* Services */; };
 		53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */; };
@@ -36,6 +42,7 @@
 		53F3199C1E913751009D5A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F3199B1E913751009D5A1C /* Assets.xcassets */; };
 		53F3199F1E913751009D5A1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F3199D1E913751009D5A1C /* MainMenu.xib */; };
 		53F319C31E9138B5009D5A1C /* Launcher.app in [CP] Copy Launcher */ = {isa = PBXBuildFile; fileRef = 53F319971E913751009D5A1C /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53FA33131EC568A800A6D02C /* PopupTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA33121EC568A800A6D02C /* PopupTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +103,10 @@
 /* Begin PBXFileReference section */
 		0EA856DD1A3DF9FDE78D4F77 /* Pods-TomatoNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		33DEDF9C0CACBE8AEAE28EDF /* Pods-TomatoNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomatoNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomatoNetwork/Pods-TomatoNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		530BA3F21EC590CE00DDA44D /* HorizontalCenteredTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCenteredTextFieldCell.swift; sourceTree = "<group>"; };
+		530BA3F41EC5A21900DDA44D /* HorizontalCenteredSecureTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCenteredSecureTextFieldCell.swift; sourceTree = "<group>"; };
+		5328008B1EC2BFBD0064F4C5 /* TomatoNetwork.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TomatoNetwork.storyboard; sourceTree = "<group>"; };
+		5328008D1EC2C76B0064F4C5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5328E7431E91E53B00E103EB /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		532B533C1E8E54C1007836D9 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		532B53401E8F1D2E007836D9 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = /Users/Lookis/Projects/TomatoWeb/TomatoNetwork/NetworkController.swift; sourceTree = "<absolute>"; };
@@ -113,6 +124,9 @@
 		538E3EC11E92753F009AB4DA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		538E3ECA1E927A18009AB4DA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		538E3ECC1E927A1C009AB4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5393E8801ED6DB0E00F7E5B0 /* TomatoNetwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TomatoNetwork-Bridging-Header.h"; sourceTree = "<group>"; };
+		5393E8811ED6DB0E00F7E5B0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5393E8831ED6DB3000F7E5B0 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		53B7DF821EC04A8300B87F34 /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = "../../Library/Developer/Xcode/DerivedData/TomatoWeb-ctzhlydeoexnkxajgaxhjtzoszhf/Build/Products/Debug/Apollo/Apollo.framework"; sourceTree = "<group>"; };
 		53E2D26E1E88E24000ACAFD8 /* TomatoNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomatoNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +134,7 @@
 		53E2D2761E88E24100ACAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53E2D2781E88E24100ACAFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		53E2D5551ED2DD8D0062A01A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		53E63C1C1E8D46A3000C36D3 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
 		53E63C1E1E8D46E6000C36D3 /* SSLocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLocalService.swift; sourceTree = "<group>"; };
@@ -131,6 +146,7 @@
 		53F3199B1E913751009D5A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53F3199E1E913751009D5A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53F319A01E913751009D5A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FA33121EC568A800A6D02C /* PopupTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTabViewController.swift; sourceTree = "<group>"; };
 		89D55DB5445515A2C9027817 /* Pods_TomatoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TomatoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +228,7 @@
 		53E2D2701E88E24000ACAFD8 /* TomatoNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				53FA33111EC5683A00A6D02C /* Popup */,
 				538E3ECB1E927A18009AB4DA /* Localizable.strings */,
 				532B53401E8F1D2E007836D9 /* NetworkController.swift */,
 				53E63C201E8D6083000C36D3 /* PrivoxyService.swift */,
@@ -219,12 +236,16 @@
 				53E63C221E8D6175000C36D3 /* KcpTunService.swift */,
 				53E2D2711E88E24000ACAFD8 /* AppDelegate.swift */,
 				53E2D2731E88E24000ACAFD8 /* Assets.xcassets */,
+				5328008B1EC2BFBD0064F4C5 /* TomatoNetwork.storyboard */,
 				53E2D2751E88E24100ACAFD8 /* MainMenu.xib */,
 				53E2D27E1E88EC4700ACAFD8 /* StatusMenuController.swift */,
 				53E2D2781E88E24100ACAFD8 /* Info.plist */,
 				53E63C101E8D3883000C36D3 /* ServiceProtocol.swift */,
 				53E63C241E8DFFAC000C36D3 /* ServiceController.swift */,
 				5389972F1E924E400065EE70 /* StringLocalizedExtension.swift */,
+				5393E8811ED6DB0E00F7E5B0 /* MBProgressHUD.m */,
+				5393E8801ED6DB0E00F7E5B0 /* TomatoNetwork-Bridging-Header.h */,
+				5393E8831ED6DB3000F7E5B0 /* MBProgressHUD.h */,
 			);
 			path = TomatoNetwork;
 			sourceTree = "<group>";
@@ -248,6 +269,18 @@
 				53F319A01E913751009D5A1C /* Info.plist */,
 			);
 			path = Launcher;
+			sourceTree = "<group>";
+		};
+		53FA33111EC5683A00A6D02C /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				5328008D1EC2C76B0064F4C5 /* LoginViewController.swift */,
+				53FA33121EC568A800A6D02C /* PopupTabViewController.swift */,
+				530BA3F21EC590CE00DDA44D /* HorizontalCenteredTextFieldCell.swift */,
+				530BA3F41EC5A21900DDA44D /* HorizontalCenteredSecureTextFieldCell.swift */,
+				53E2D5551ED2DD8D0062A01A /* MainViewController.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 		A42559E94A235382D9E864A6 /* Pods */ = {
@@ -342,6 +375,7 @@
 					53E2D26D1E88E24000ACAFD8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TV7X9S92KX;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
 					53F319961E913751009D5A1C = {
@@ -382,6 +416,7 @@
 				53E2D2741E88E24000ACAFD8 /* Assets.xcassets in Resources */,
 				538E3EC91E927A18009AB4DA /* Localizable.strings in Resources */,
 				532B53611E900935007836D9 /* proxy.pac in Resources */,
+				5328008C1EC2BFBD0064F4C5 /* TomatoNetwork.storyboard in Resources */,
 				532B535F1E8FE26F007836D9 /* Podfile in Resources */,
 				53E2D2771E88E24100ACAFD8 /* MainMenu.xib in Resources */,
 			);
@@ -475,6 +510,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530BA3F51EC5A21900DDA44D /* HorizontalCenteredSecureTextFieldCell.swift in Sources */,
+				5328008E1EC2C76B0064F4C5 /* LoginViewController.swift in Sources */,
 				532B53411E8F1D2E007836D9 /* NetworkController.swift in Sources */,
 				53E63C211E8D6083000C36D3 /* PrivoxyService.swift in Sources */,
 				53E63C111E8D3883000C36D3 /* ServiceProtocol.swift in Sources */,
@@ -482,9 +519,13 @@
 				53E63C231E8D6175000C36D3 /* KcpTunService.swift in Sources */,
 				53E63C1F1E8D46E6000C36D3 /* SSLocalService.swift in Sources */,
 				53E2D27F1E88EC4700ACAFD8 /* StatusMenuController.swift in Sources */,
+				53E2D5561ED2DD8D0062A01A /* MainViewController.swift in Sources */,
 				53E63C251E8DFFAC000C36D3 /* ServiceController.swift in Sources */,
+				53FA33131EC568A800A6D02C /* PopupTabViewController.swift in Sources */,
 				538997301E924E400065EE70 /* StringLocalizedExtension.swift in Sources */,
 				53E2D2721E88E24000ACAFD8 /* AppDelegate.swift in Sources */,
+				530BA3F31EC590CE00DDA44D /* HorizontalCenteredTextFieldCell.swift in Sources */,
+				5393E8821ED6DB0E00F7E5B0 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +723,7 @@
 			baseConfigurationReference = 33DEDF9C0CACBE8AEAE28EDF /* Pods-TomatoNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV7X9S92KX;
@@ -690,7 +732,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TomatoNetwork/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(CONFIGURATION_BUILD_DIR)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -701,6 +743,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TomatoNetwork/TomatoNetwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -710,6 +754,7 @@
 			baseConfigurationReference = 0EA856DD1A3DF9FDE78D4F77 /* Pods-TomatoNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TV7X9S92KX;
@@ -718,7 +763,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TomatoNetwork/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(CONFIGURATION_BUILD_DIR)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -728,6 +773,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TomatoNetwork/TomatoNetwork-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

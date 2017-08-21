@@ -18,15 +18,21 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var connectionStatus: NSMenuItem!
     @IBOutlet weak var version: NSMenuItem!
     @IBOutlet weak var launchAtLogin: NSMenuItem!
+    @IBOutlet weak var popover: NSPopover!
     
     let NOT_LAUNCH_AT_STARTUP = "NOT_LAUNCH_AT_STARTUP"
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     let networkController = NetworkController.sharedInstance
+    
     override func awakeFromNib() {
         let icon = NSImage(named: "SystemTray")
         icon?.isTemplate = true
-        statusItem.image = icon
-        statusItem.menu = statusMenu
+        if let button = statusItem.button {
+            button.image = icon
+            button.target = self
+            button.action = #selector(self.handleClicked(sender:))
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+        }
         //start service
         connectionStatus.title = "Tomato Web: On".localized
         connectionSwitch.title = "Turn Off".localized
@@ -34,6 +40,10 @@ class StatusMenuController: NSObject {
         version.title = "\("Version".localized): \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String)"
         //launch on startup
         launchAtLogin.state = UserDefaults.standard.bool(forKey: NOT_LAUNCH_AT_STARTUP) ? NSOffState : NSOnState
+        
+        //Popover
+        let storyboard = NSStoryboard.init(name: "TomatoNetwork", bundle: Bundle.main)
+        popover.contentViewController = (storyboard.instantiateInitialController() as! NSViewController);
     }
     
     @IBAction func handleLaunchAtLogin(_ sender: Any) {
@@ -60,5 +70,15 @@ class StatusMenuController: NSObject {
             networkController.setAutomaticProxyConfig()
         }
         proxyOn = !proxyOn
+    }
+    
+    func handleClicked(sender: NSStatusBarButton){
+        if (self.popover.isShown){
+            self.popover.performClose(sender)
+        }else{
+            self.popover.show(relativeTo: sender.bounds, of: sender, preferredEdge: NSRectEdge.minY)
+            NSApplication.shared().activate(ignoringOtherApps: true)
+        }
+        
     }
 }

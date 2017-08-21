@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4E15D8239A615E8C2AF4206EA66F1B3490042216",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7EACFF98B374A2117A36C4B333B3BC7FA8923E55" : 9223372036854775807,
+    "4E15D8239A615E8C2AF4206EA66F1B3490042216" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "97C00579-843C-499B-9F10-CA68CFEF88AC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7EACFF98B374A2117A36C4B333B3BC7FA8923E55" : "..\/Tmp\/MacToggle",
+    "4E15D8239A615E8C2AF4206EA66F1B3490042216" : "TomatoWeb\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TomatoNetwork",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TomatoNetwork.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lookis\/TomatoWeb.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E15D8239A615E8C2AF4206EA66F1B3490042216"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RichAppz\/MacToggle.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7EACFF98B374A2117A36C4B333B3BC7FA8923E55"
+    }
+  ]
+}

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "482FE5904723C09F9E4985A04F377222"
+               BlueprintIdentifier = "36C76FCD56CD2B6FFB2C6648C9425DD2"
                BuildableName = "Pods_TomatoNetwork.framework"
                BlueprintName = "Pods-TomatoNetwork"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "482FE5904723C09F9E4985A04F377222"
+            BlueprintIdentifier = "36C76FCD56CD2B6FFB2C6648C9425DD2"
             BuildableName = "Pods_TomatoNetwork.framework"
             BlueprintName = "Pods-TomatoNetwork"
             ReferencedContainer = "container:Pods.xcodeproj">

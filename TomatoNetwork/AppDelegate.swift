@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     let NOT_FIRST_LAUNCH = "NOT_FIRST_LAUNCH"
     let CURRENT_VERSION = "CURRENT_VERSION"
+    let KEEP_UPGRADE = "KEEP_UPGRADE"
     
     let server = HttpServer();
     

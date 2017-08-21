@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,13 +11,14 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TomatoWeb" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TomatoNetwork" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="djV-ox-Keg" customClass="StatusMenuController" customModule="TomatoWeb" customModuleProvider="target">
+        <customObject id="djV-ox-Keg" customClass="StatusMenuController" customModule="TomatoNetwork" customModuleProvider="target">
             <connections>
                 <outlet property="connectionStatus" destination="JK9-vS-eaf" id="hg6-0M-rfI"/>
                 <outlet property="connectionSwitch" destination="6GE-8P-fS9" id="RRm-Bw-78Z"/>
                 <outlet property="launchAtLogin" destination="01s-4M-2ZZ" id="Iyc-V4-0TF"/>
+                <outlet property="popover" destination="NdW-Kt-woT" id="beG-m1-8AC"/>
                 <outlet property="statusMenu" destination="dKA-AY-x4k" id="1k3-Vq-DQI"/>
                 <outlet property="version" destination="UJG-cx-GQv" id="Rp9-qZ-dQm"/>
             </connections>
@@ -50,5 +51,6 @@
             </items>
             <point key="canvasLocation" x="81" y="-241"/>
         </menu>
+        <popover behavior="t" id="NdW-Kt-woT"/>
     </objects>
 </document>
